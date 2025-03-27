@@ -1,7 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Maitree:wght@200;300;400;500;600;700&family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Playfair+Display+SC:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quicksand:wght@300..700&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: "Quicksand", sans-serif;
 }
 /* OBS: quando for criar um box shadow e quiser sobrepor ele em uma div não coloque uma cor na mesma.*/
 body{
@@ -26,11 +28,11 @@ body{
 }
 .menu-logo{
     border-radius: 20px;
-    background-color: rgba(255, 255, 255, 0.589);
     width: 70px;
     display: flex;
     justify-content: center;
 }
+
 .menu-logo img{
     height: 60px;
 }
@@ -198,22 +200,20 @@ border-top: 8px solid #1e192d;
     display: flex;
     flex-wrap: wrap;
     align-items: flex-end;
-    -webkit-box-shadow: 0px 0px 39px 10px rgb(112, 87, 127);
+    -webkit-box-shadow: 0px 6px 32px 0px rgba(116,114,133,1);
     
 }
 .preco-item {
     flex: 1 1 260px;
-    border: 4px solid rgb(27, 27, 27);
+    border: 1px solid rgb(27, 27, 27);
     border-radius: 5px;
     background-color: #dddddd;
-    -webkit-box-shadow: 0px 0px 39px 10px rgb(112, 87, 127);
     z-index: 2;
     padding: 20px;
     margin: 10px;
 }
 .preco-item h2 {
     font-size:3em;
-    color: #03608b;
     text-align: center;
     margin-top: 20px;
 }
@@ -257,10 +257,9 @@ border-top: 8px solid #1e192d;
     max-width: 300px;
     display: block;
     margin: 20px auto;
-    border: 4px solid;
+    border: 2px solid;
     color: #272727;
     border-radius: 10px;
-    background-color: #3f3f3f41;
     text-transform: uppercase;
     font-weight: bold;
     font-size: 2.25em;
@@ -272,25 +271,42 @@ border-top: 8px solid #1e192d;
     color: rgba(172, 18, 219, 0.774);
     transition: 1.2s;
     border-radius: 1em;
-    background-color: rgba(79, 79, 79, 0.449);
 }
 .separação-cor-branca{
     display: flex;
     justify-content: center;
-    margin: 0 10px;
+    margin:  40px;
     flex-wrap: wrap;
 }
 .separação-2{
     display: block;
     flex-wrap: wrap;
     max-width: 500px;
-    padding-top: 60px;
+    padding-top: 20px;
     flex: 2 1 300px;
     margin-top: 0 10px;
     align-items: center;
     img{
         flex: 1 1 160px;
-        margin: 0 10px;
-        width: 300px;
+        margin: 10px;
+        width: 500px;
     }
+    h1{
+        font-size: 2rem;
+        margin: 5px;
+    }
+}
+
+.footer {
+    display: flex;
+    background: #c799e1;
+    height: 50px;
+    align-items: center;
+    -webkit-box-shadow: 0px 6px 32px 0px rgba(116,114,133,1);
+}
+
+.footer p{
+    flex: 1;
+    text-align: center;
+    font-size: 1.25em;
 }
